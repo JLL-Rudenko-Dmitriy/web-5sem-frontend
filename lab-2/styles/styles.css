@@ -1,12 +1,12 @@
 .promo {
     height: 100%;
     width: 100%;
-    min-width: 1920px;
-    min-height: 800px;
+    min-width: 100%;
+    min-height: 74%;
 
     background-image: url("../images/main_bg.jpg");
     background-repeat: no-repeat;
-    background-size: 1920px 800px;
+    background-size: 100% 100%;
 
     text-align: center;
     font-family: 'Roboto', sans-serif;

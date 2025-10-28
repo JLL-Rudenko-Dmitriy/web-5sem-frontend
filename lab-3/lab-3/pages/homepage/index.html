@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/normalized.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/barlow-font.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <script type="module" src="../main.js"></script>
+    <title>Homepage</title>
+</head>
+<body>
+    <header class="header__bg-image">
+        <nav class="header__mobile_menu_list">
+            <ul>
+                <li>catalog</li>
+                <li>blog</li>
+                <li>about</li>
+            </ul>
+        </nav>
+        <div class="header__mobile_menu">
+            <span></span>
+        </div>
+        <img src="../../assets/icons/logo.png" alt="main logo" class="header__main-logo">
+        <li class="header__menu">
+            <ul class="header__menu-item">
+                <a href="../catalog/index.html" class="header__menu-link">catalog</a>
+            </ul>
+            <ul class="header__menu-item">
+                <a href="" class="header__menu-link">blog</a>
+            </ul>
+            <ul class="header__menu-item">
+                <a href="" class="header__menu-link">about</a>
+            </ul>
+        </li>
+
+        <section class="header__promo">
+            <div class="header__promo__flex">
+                <div class="header__promo-text"><h2>Make your dream come true or decorate your home</h2></div>
+                
+                <div class="header__promo-image-with-button">
+                    <div class="header__promo-image"></div>
+                    <button class="header__promo-button styled-button">
+                        shop now
+                    </button>
+                </div>
+                
+            </div>
+            
+        </section>
+    </header>
+    <main>
+
+        <section class="create-or-buy">
+            <h2 class="create-or-buy__title">create or buy</h2>
+
+            <div class="create-or-buy__offers">
+                <div class="create-or-buy-store">
+                    <h3 class="create-or-buy__offer-title">our store</h3>
+                    <img src="../../images/store.png" alt="" class="create-or-buy__image">
+                    <p class="create-or-buy__description">Welcome to <span class="create-or-buy__description__highlighted">Ceramic Soul</span>, where each piece tells a story of craftsmanship and creativity. Our handmade ceramics are thoughtfully designed and carefully crafted, blending traditional techniques with modern aesthetics. Whether you're looking for a unique gift or a special addition to your home, our collection offers timeless pieces that bring warmth and authenticity to any space.</p>
+                </div>
+                <div class="create-or-buy-workshop">
+                    <h3 class="create-or-buy__offer-title">our workshop</h3>
+                    <img src="../../images/ceramic-4510917_1280 1.png" alt="" class="create-or-buy__image">
+                    <p class="create-or-buy__description_workshop">At <span class="create-or-buy__description__highlighted">Ceramic Soul</span> workshop, we don’t just craft ceramics—we invite you to get hands-on and create your own unique pieces. Through our engaging masterclasses, you’ll learn traditional techniques, work with natural materials, and experience the joy of shaping clay into something truly personal.</p>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="get-in-touch">
+            <h2 class="get-in-touch-title">get in touch</h2>
+            <div class="get-in-touch__content">
+                <img class="get-in-touch__image" src="../../images/tea.png" alt="tea"></img>
+                <form class="get-in-touch__form" novalidate>
+                    <div class="get-in-touch__form-input-field">
+                        <label class="get-in-touch__input-field-lable">Name</label>
+                        <input aria-label="" type="text" placeholder="Name" id="input__name" class="get-in-touch__input_field" required></input>
+                        <span class="form__error input__name-error" id="name-error" aria-live="polite"></span>
+                    </div>
+                    <div class="get-in-touch__form-input-field">
+                        <label class="get-in-touch__input-field-lable">Email</label>
+                        <input type="email" class="get-in-touch__input_field" id="input__email" placeholder="Email" required></input>
+                        <span class="form__error input__email-error" id="email-error" aria-live="polite"></span>
+                    </div>
+                    <div class="get-in-touch__form-input-field input-field__question">
+                        <label class="get-in-touch__input-field-lable">Your question</label>
+                        <textarea class="get-in-touch__input_field__large" placeholder="Your question"></textarea>
+                    </div>
+                    <div class="get-in-touch__form-input-field input-field__agreement">
+                        <input type="checkbox" class="get-in-touch__agreement" id="input__checkbox" required></input>
+                        <p>I agree with the terms</p>
+                        <span class=" form__error input__checkbox-error" id="checkbox-error" aria-live="polite"></span>
+                    </div>
+                    <div class="get-in-touch__form-input-field">
+                        <input type="button" class="get-in-touch__button styled-button" value="send request"></input>
+                    </div>                     
+                </form>
+                <div class="get-in-touch__form-input-field get-in-touch__form-input-field__align-right">
+                    <img src="../../assets/icons/vase.png" alt="" class="get-in-touch__vase-img">
+                </div>   
+                <span class="form__empty-error" id="empty-error" aria-live="assertive"></span>
+            </div>
+        </section>
+
+        <section class="our-works">
+            <h2 class="our-works__title">Checkout our works</h2>
+          
+            <div class="swiper">                        <!-- было .swiper-container -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure class="our-works__element">
+                    <img src="/images/tea-6675004_1280 1.png" class="our-works__image" alt="">
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="our-works__element">
+                    <img src="/images/tea-7968441_1280 1.png" class="our-works__image" alt="">
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="our-works__element">
+                    <img src="/images/tea-ceremony-7807230_1280 1.png" class="our-works__image" alt="">
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="our-works__element">
+                      <img src="/images/tea-7968441_1280 1.png" class="our-works__image" alt="">
+                    </figure>
+                  </div>
+              </div>
+          
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+    </main>
+    <footer>
+       <div class="footer__container__flex">
+            <div class="footer__news_and_promotions">
+                <h3 class="footer__newsletter">newsletter</h3>
+                <div class="footer__submit_form">
+                    <h4 class="footer__submit_form_title">Keep up to date with news and promotions</h4>
+                    <input type="text" placeholder="Enter your e-mail" class="footer_submit_email">
+                    <div class="footer__checkbox_form__flex">
+                        <input type="checkbox" class="footer__submit_agree" name="" id="">
+                        <p class="footer__checkbox_text">I agree with the <span class="footer_checkbox_text__link">terms</span></p><br>
+                    </div>
+                    <input type="button" value="submit" class="footer__submit_button styled-button">
+                </div>
+            </div>
+            <div class="footer__navigation__flex">
+                <div class="footer__navigation_discover">
+                    <h3 class="footer__discover_title">discover</h3>
+                    <ul class="footer__information_links">
+                        <li class="footer__information_link"><a href="../about/index.html">About Us</a></li>
+                        <li class="footer__information_link"><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__navigation_shopping">
+                    <h3 class="footer__shopping_title">shopping</h3>
+                    <ul class="footer__information_links">
+                        <li class="footer__information_link"><a href="../catalog/index.html">Catalog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__navigation_information">
+                    <h3 class="footer__information_title">information</h3>
+                    <ul class="footer__information_links">
+                        <li class="footer__information_link"><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__follow_us">
+                <h3 class="footer__follow_us_title">
+                    follow us
+                </h3>
+                <div class="footer_follow_us_flex">
+                    <img src="../../assets/icons/facebook.png" alt="">
+                    <img src="../../assets/icons/instagram.png" alt="">
+                    <img src="../../assets/icons/pinterest.png" alt="">
+                </div>
+            </div>
+       </div>
+       <div class="footer__rights"><p class="footer__rights_text">© Copyright 2025, Ceramic soul</p></div>
+    </footer>
+</body>
+</html>

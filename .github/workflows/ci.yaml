@@ -20,6 +20,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        working-directory: lab-3/lab-3
+        run: npm ci
+      - name: Build project
+        working-directory: lab-3/lab-3
+        run: npm run build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

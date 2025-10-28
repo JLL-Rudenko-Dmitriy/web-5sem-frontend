@@ -1,3 +1,8 @@
+import "./main.css";
+
+import "../scripts/main.js";
+import "../scripts/swiper.js";
+
 const first_element = document.getElementById("tea");
 first_element.classList.add('active');
 

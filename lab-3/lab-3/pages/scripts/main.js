@@ -1,4 +1,4 @@
-import "../scripts/main.js"
+import "./swiper.js"
 
 const burger_menu_class = ".header__mobile_menu";
 const burger_menu_list = ".header__mobile_menu_list";

@@ -11,13 +11,16 @@ document.querySelector(burger_menu_class).addEventListener('click', function() {
 
 // Validation code
 const form = document.querySelector('.get-in-touch__form')
-const inputList = Array.from(form.querySelectorAll('.get-in-touch__input_field'))
-const checkboxElement = form.querySelector('.get-in-touch__agreement')
-const buttonElement = form.querySelector('.get-in-touch__button')
 
-startValidation()
+if (form != null) {
+  const inputList = Array.from(form.querySelector('.get-in-touch__input_field'))
+  const checkboxElement = form.querySelector('.get-in-touch__agreement')
+  const buttonElement = form.querySelector('.get-in-touch__button')
 
-function startValidation() {
+  startValidation();
+
+  
+  function startValidation() {
     toggleButton()
     form.addEventListener('submit', (event) => {
         event.preventDefault()
@@ -46,9 +49,9 @@ function startValidation() {
             toggleButton()
         })
     })
-}
+  }
 
-function toggleInputError(inputElement) {
+  function toggleInputError(inputElement) {
     if (!inputElement.validity.valid) {
       toggleErrorSpan(inputElement, inputElement.validationMessage)
     } else {
@@ -56,15 +59,15 @@ function toggleInputError(inputElement) {
     }
   }
 
-function checkInputValidity(inputElement) {
+  function checkInputValidity(inputElement) {
     if (inputElement.validity.patternMismatch) {
       inputElement.setCustomValidity(inputElement.dataset.errorMessage)
     } else {
       inputElement.setCustomValidity(checkLengthMismatch(inputElement))
     }
-}
-  
-function checkLengthMismatch(inputElement) {
+  }
+
+  function checkLengthMismatch(inputElement) {
     if (inputElement.type !== 'text') {
       return ''
     }
@@ -73,15 +76,15 @@ function checkLengthMismatch(inputElement) {
       return `Минимальное количество символов: ${inputElement.minLength}`
     }
     return ''
-}
-  
-function hasInvalidInput() {
+  }
+
+  function hasInvalidInput() {
     return (
       inputList.some(inputElement => !inputElement.validity.valid) || !checkboxElement.validity.valid
     )
-}
-  
-function toggleErrorSpan(inputElement, errorMessage){
+  }
+
+  function toggleErrorSpan(inputElement, errorMessage){
     const errorElement = document.querySelector(`.${inputElement.id}-error`)
     if (errorMessage) {
       inputElement.classList.add('form__type-input-error')
@@ -92,9 +95,9 @@ function toggleErrorSpan(inputElement, errorMessage){
       errorElement.textContent = ''
       errorElement.classList.remove('form__error-active')
     }
-}
-  
-function toggleButton() {
+  }
+
+  function toggleButton() {
     if (hasInvalidInput()) {
       buttonElement.classList.add('button-inactive')
       buttonElement.setAttribute('aria-disabled', 'true')
@@ -103,9 +106,10 @@ function toggleButton() {
       buttonElement.setAttribute('aria-disabled', 'false')
       formErrorElement.textContent = ''
     }
-}
-  
-function formError() {
+  }
+
+  function formError() {
     const errorMessage = 'Заполните все поля для отправки формы.'
     formErrorElement.textContent = errorMessage
+  }
 }

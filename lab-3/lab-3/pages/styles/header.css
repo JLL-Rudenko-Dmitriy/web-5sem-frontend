@@ -1,0 +1,172 @@
+header {
+    height: 351;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.header__icons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: right;
+    position: absolute;
+    top:70px;
+    gap: 15px;
+    padding-right: 240px;
+}
+
+.header__mobile_menu {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20px;
+    height: 20px;
+
+    top: 70px;
+    left: 10px;
+}
+
+
+.header__mobile_menu span {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.header__mobile_menu::before, .header__mobile_menu::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.button-inactive {
+    cursor: not-allowed;
+    background-color: rgb(211 211 211 / 0.6);
+}
+  
+.button-inactive:hover {
+    background-color: rgb(211 211 211 / 0.2);
+    border: 2px solid transparent;
+}
+
+.header__mobile_menu::before {
+    top: 0;
+}
+.header__mobile_menu::after {
+    bottom: 0;
+}
+
+.header__mobile_menu.active span {
+    transform: scale(0);
+}
+
+.header__mobile_menu.active::after {
+    bottom: 44%;
+    transform: rotate(45deg) translate(0, -50%);
+    right: 2px;
+}
+
+.header__mobile_menu.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.header__mobile_menu_list {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow: auto;
+    background-color: white;
+    animation: BurgerAnimation 0.4s;
+    text-align: left;
+}
+
+.open {
+    display: flex !important;
+}
+
+.open ul{
+    display: flex !important;
+}
+
+.header__mobile_menu_list ul{
+    padding-top: 100px;
+    list-style: none;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+@keyframes BurgerAnimation{
+    from { opacity: 0; }
+    to { opacity: 100; }
+}
+
+.header__main-logo {
+    display: inline;
+    margin-top: 40px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    list-style: none;
+    margin-top: 20px;
+}
+
+.header__menu-item {
+    padding: 0;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  font-style: 30px;
+  color: black;
+}
+
+@media(max-width: 368px) {
+    .header__mobile_menu {
+        display: flex;
+    }
+
+    .header__icons {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__main-logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .header__menu {
+        gap: 30px;
+    }
+
+    .header__icons {
+        padding-right: 24px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .header__icons {
+        padding-right: 30px;
+    }
+}

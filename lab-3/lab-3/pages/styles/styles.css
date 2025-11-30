@@ -1,0 +1,412 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.form__error {
+    color: red;
+}
+
+
+/* header__promo */
+
+.header__promo {
+    margin-top: 79px;
+    text-align: right;
+    font-family: 'Barlow', sans-serif;
+
+    height: 589px;
+    margin-right: 240px;
+}
+
+.header__bg-image {
+    background-image: url('../images/potter.png');
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.header__promo__flex {
+    height: 600px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.header__promo-text {
+    width: 438px;
+
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    vertical-align: bottom;
+    padding-bottom: 115px;
+}
+
+.header__promo-image{
+    background-image: url('../images/ceramic-vase.png');
+    background-repeat: no-repeat;
+    height: 460px;
+    width: 330px;
+}
+
+.styled-button {
+    margin-top: 50px;
+    border-radius: 2%;
+    border: 1px solid black;
+    background-color: #FAFAFA;
+
+    height: 60px;
+    width: 330px;
+    font-size: 20px;
+    text-transform: inherit;
+}
+
+.styled-button:hover {
+    background-color: #232323;
+    color: white;
+}
+
+.styled-button:active {
+    background-color: #FAFAFA;
+    color: black;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    font-family: 'Barlow' sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 240px 0 240px;
+}
+
+/* create or buy */
+
+.create-or-buy__title {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.create-or-buy__offers {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.create-or-buy__image {
+    margin-top: 60px;
+}
+
+.create-or-buy__description,
+.create-or-buy__description_workshop {
+    width: fit-content;
+    text-align: left;
+    text-transform: none;
+}
+
+.create-or-buy__description__highlighted {
+    color: #C69978;
+}
+
+/* Get in touch */
+
+.get-in-touch {
+    margin-top: 100px;
+}
+
+.get-in-touch-title {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.get-in-touch__content {
+    display: flex;
+    justify-content: center;
+    gap: 147px;
+    margin-top: 80px;
+}
+
+.get-in-touch__form {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+.get-in-touch__input_field {
+    height: 48px;
+    width: 300px;
+}
+
+.get-in-touch__input_field::placeholder {
+    padding-left: 15px;
+} 
+
+.get-in-touch__input_field__large{
+    height: 132px;
+    resize: none;
+}
+
+.get-in-touch__form-input-field {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.get-in-touch__input-field-lable {
+    text-align: left;
+}
+
+.input-field__question{
+    width: 300px;
+    grid-column: 1 / -1;
+}
+
+.input-field__agreement {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-end;
+    gap:7px;
+    width: 300px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 28px;
+}
+
+.get-in-touch__agreement {
+    display: inline;
+    text-align: left;
+}
+
+.get-in-touch__button{
+    height: 40px;
+    width: 220px;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.get-in-touch__vase-img {
+    height: 85px;
+    width: 85px;
+    position: absolute;
+    bottom: 0;
+    right: 125px;
+}
+
+.get-in-touch__form-input-field__align-right {
+    position: relative;
+}
+
+/* our works */
+
+.our-works {
+    text-transform: uppercase;
+}
+
+.our-works__title {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.our-works__image {
+    width: 400px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.form__type-input-error {
+    border: 1px solid #DB0C35;
+}
+
+@media(max-width: 1200px) {
+
+    .header__bg-image {
+        background-size: 450px 633px;
+    }
+
+    .header__promo,
+    .footer__container__flex {
+        margin: 0 30px 0 30px;
+    }
+
+    main{
+        padding: 0 30px 0 30px;
+    }
+
+    .header__promo-text {
+        font-size: 24px;
+    }
+
+    .header__promo-image {
+        background-size: 230px 321px;
+        background-position-x: right;
+        background-position-y: bottom;
+        width: 230px;
+    }
+
+    .header__promo__flex {
+        height: 450px;
+        gap: 10px;
+    }
+
+    .styled-button {
+        width: 230px;
+        height: 50px;
+    }
+
+    .header__promo-button {
+        margin-top: 0;
+    }
+
+    .create-or-buy__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .create-or-buy-store {
+        width: 436px;
+    }
+
+    .create-or-buy-workshop {
+        width: 664px;
+    }
+
+    .create-or-buy__description {
+        width: 436px;
+    }
+
+    .create-or-buy__description_workshop {
+        width: fit-content;
+    }
+
+    .get-in-touch__form {
+        grid-template-columns: 300px;
+    }
+
+    .get-in-touch__content {
+        gap: 10px;
+        justify-content: left;
+    }
+
+    .get-in-touch__image {
+        height: 341px;
+        width: 550px;
+    }
+
+    .get-in-touch__vase-img {
+        bottom: 0;
+    }
+    
+    .our-works__image {
+        width: 350px;
+        height: 230px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .header__bg-image {
+        background-image: none;
+        height: 630px;
+    }
+
+    .header__promo,
+    .footer__container__flex {
+        text-align: left;
+        margin: 0 24px 0 24px;
+        gap:90px;
+    }
+
+    main{
+        padding: 0 24px 0 24px;
+    }
+
+    .header__promo-text {
+        font-size: 24px;
+    }
+
+    .create-or-buy__offers {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .create-or-buy-store,
+    .create-or-buy-workshop {
+        width: 530px;
+    }
+
+    .get-in-touch__image {
+        display: none;
+    }
+
+    .get-in-touch__vase-img {
+        right: 0;
+        bottom: 0;
+    }
+
+    .create-or-buy__title {
+        margin-top: 60px;
+    }
+    
+    .create-or-buy__offers {
+        margin-top: 40px;
+    }
+
+    .our-works__title,
+    .get-in-touch-title {
+        margin-bottom: 45px;
+    }
+}
+
+@media(max-width: 368px) {
+
+    .header__bg-image {
+        height: auto;
+    }
+
+    .header__promo__flex {
+        height: 100%;
+        margin-top: 50px;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .header__promo-text {
+        padding-bottom: 0;
+    }
+
+    .header__promo-image-with-button {
+        height: auto;
+    }
+
+    .create-or-buy {
+        margin-top: 60px;
+    }
+
+    .create-or-buy-store,
+    .create-or-buy-workshop {
+        height: fit-content;
+        width: 340px;
+        overflow-wrap: normal;
+    }
+
+    .create-or-buy__description,
+    .create-or-buy__description_workshop {
+        width: fit-content;
+    }
+
+    .get-in-touch__vase-img {
+        display: none;
+    }
+
+}

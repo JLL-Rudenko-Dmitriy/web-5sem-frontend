@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Barlow' sans-serif;
+    src: url('../assets/fonts/Barlow-Regular.ttf') format('ttf');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow' sans-serif;
+    src: url('../assets/fonts/Barlow-LightItalic.ttf') format('ttf');
+
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
